@@ -1,0 +1,57 @@
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@import './functions/margin';
+@import './functions/fonts';
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+$desktop: 766px;
+$principal: #39b54a;
+$color-gray: #ececec;
+$color-white: #ffffff;
+
+a {
+	transition: all ease 0.5s;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+body {
+	font-family: 'Bebas Neue', cursive;
+	font-size: 16px;
+	box-sizing: border-box;
+	background-image: linear-gradient(to bottom, $color-gray 65%, $principal);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bg {
+	&-principal {
+		background: $principal;
+	}
+}
+
+.button {
+	&-principal {
+		background: $principal !important;
+		border: $principal;
+	}
+}
+
+.c {
+	&-principal {
+		color: $principal;
+	}
+}
+
+.container {
+	max-width: 1840px;
+	width: 85%;
+	margin: 0 auto;
+	&-transparent {
+		background: rgba(#fff, 0.6);
+	}
+}
+
+@import './pages/landing';
