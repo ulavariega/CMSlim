@@ -18,12 +18,29 @@ a {
 }
 
 body {
-	font-family: 'Bebas Neue', cursive;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	box-sizing: border-box;
 	background-image: linear-gradient(to bottom, $color-gray 65%, $principal);
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bebas Neue', cursive;
+}
+
+.fs {
+	&-bebas-neue {
+		font-family: 'Bebas Neue', cursive;
+	}
+	&-helvetica {
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	}
 }
 
 .bg {
@@ -52,6 +69,10 @@ body {
 	&-transparent {
 		background: rgba(#fff, 0.6);
 	}
+}
+
+.rota-horizontal {
+	transform: scaleX(-1);
 }
 
 @import './pages/landing';
