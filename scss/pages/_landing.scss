@@ -8,6 +8,11 @@
 			text-transform: uppercase;
 			font-size: 1.2rem;
 		}
+		&-image {
+			@media screen and (max-width: $desktop) {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -123,6 +128,44 @@
 	}
 }
 
+.comments {
+	margin: 5rem;
+	&_card {
+		margin-top: 5rem;
+		margin-right: 2rem;
+		&:last-child {
+			margin-right: -4rem;
+		}
+		background-color: $color-white;
+		&-person {
+			.info {
+				text-align: center;
+				.name {
+					font-weight: 700;
+					margin: 0;
+					color: $primary;
+				}
+				.age {
+					margin-top: -0.1rem;
+					font-weight: 300;
+				}
+			}
+		}
+		&-image {
+			margin-top: -3rem;
+			border-radius: 50%;
+			@media screen and (max-width: $desktop) {
+				margin-top: -1.5rem;
+				width: 35%;
+			}
+		}
+
+		&-comment {
+			align-self: center;
+		}
+	}
+}
+
 .footer {
 	margin-top: 5rem;
 	background: $principal;
@@ -138,6 +181,5 @@
 	}
 	ul {
 		list-style: none;
-		margin-right: 5rem !important;
 	}
 }
